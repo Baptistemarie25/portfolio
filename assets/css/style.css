@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+body {
+    color: #3C1F15;
+    font-family: sans-serif, Helvetica, Arial,;
+}
+
 /* HEADER/NAVIGATION STYLES */
 header {
     padding: 30px 35px;
@@ -17,6 +22,7 @@ header {
 header h1 {
     font-weight: bolder;
     font-size: 45px;
+    text-shadow: 3px 3px #BC5C1C;
     background-color: #F2A78C;
     padding: 10px 10px;
     border: 5px solid #3C1F15;
@@ -50,3 +56,37 @@ header nav ul li a:hover {
 }
 /* Header Style End */
 
+/* FOOTER STYLE START */
+
+
+/*FOOTER STYLE END */
+
+/* HERO/JUMBOTRON SECTION */
+
+.hero {
+    background-image: url("../images/hero-img-portfolio.JPG");
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+}
+
+.hero-title {
+    font-size: 25px;
+}
+
+.hero-title h2 {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #F2A78C;
+    text-shadow: 2px 2px #3C1F15;
+}
+
+.intro p {
+    line-height: 1.7;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+}
