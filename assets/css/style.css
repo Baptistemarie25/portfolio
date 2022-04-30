@@ -62,7 +62,6 @@ header nav ul li a:hover {
 /*FOOTER STYLE END */
 
 /* HERO/JUMBOTRON SECTION */
-
 .hero {
     background-image: url("../images/hero-img-portfolio.JPG");
     height: 500px;
@@ -83,6 +82,11 @@ header nav ul li a:hover {
     color: #F2A78C;
     text-shadow: 2px 2px #3C1F15;
 }
+/* Hero End */
+
+.main {
+    display: grid;
+}
 
 .intro p {
     line-height: 1.7;
@@ -90,4 +94,34 @@ header nav ul li a:hover {
     margin: 0 auto;
     font-size: 18px;
     text-align: left;
+}
+
+.flexbox {
+    display: inline;
+    text-align: right;
+    padding: 20px 20px;
+}
+
+.sample {
+   float: left;
+   width: 33.33%;
+   padding: 5px;
+}
+
+.main-too {
+    display: grid;
+    box-sizing: border-box;
+    padding: 16px;
+    grid-template-columns: 2;
+    
+}
+
+.project-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+.project-img img {
+    max-width: 100%;
+    object-fit: ;
+
 }
