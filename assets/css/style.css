@@ -152,12 +152,14 @@ header nav ul li a:hover {
 }
 
 .intro-right {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
     display: grid;
-    column-gap: 5px;
+    column-gap: 0;
     row-gap: 5px;
     grid-template-columns: auto auto;
     padding: 20px 30px;
-    margin: auto;
     background-color: #BC5C1C;
     border: 10px solid #3C1F15;
 }
