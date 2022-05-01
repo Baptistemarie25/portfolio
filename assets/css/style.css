@@ -107,13 +107,6 @@ header nav ul li a:hover {
     text-align: left;
 }
 
-.main-too {
-    margin: 20px 20px;
-    padding: 20px 20px;
-    display: flex;
-    width: 20%;
-}
-
 .sample {
     display: flex;
     flex-wrap: wrap;
