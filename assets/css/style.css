@@ -7,6 +7,7 @@
 body {
     color: #3C1F15;
     font-family: sans-serif, Helvetica, Arial,;
+    background: #F9D7BD;
 }
 
 /* HEADER/NAVIGATION STYLES */
@@ -56,19 +57,16 @@ header nav ul li a:hover {
 }
 /* Header Style End */
 
-/* FOOTER STYLE START */
-
-
-/*FOOTER STYLE END */
 
 /* HERO/JUMBOTRON SECTION */
 .hero {
     background-image: url("../images/hero-img-portfolio.JPG");
-    height: 500px;
+    height: 700px;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
-    background-attachment: fixed;
+    background-attachment: relative;
+    background-position: 80%;
 }
 
 .hero-title {
@@ -76,19 +74,32 @@ header nav ul li a:hover {
 }
 
 .hero-title h2 {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
+    text-align: right;
     color: #F2A78C;
     text-shadow: 2px 2px #3C1F15;
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    padding: 5px 15px;
 }
 /* Hero End */
 
+/* ABOUT ME */
 .main {
-    display: grid;
+    display: flex;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    justify-content: space-between;
 }
 
-.intro p {
+.intro-left, .intro-right {
+    display: flex;
+}
+
+.intro-right p {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
     line-height: 1.7;
     width: 90%;
     margin: 0 auto;
@@ -96,32 +107,59 @@ header nav ul li a:hover {
     text-align: left;
 }
 
-.flexbox {
+.main-too {
+    margin: 20px 20px;
+    padding: 20px 20px;
+    display: flex;
+    width: 20%;
+}
+
+.sample {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.sample .detail h3, h4 {
+    color: #F9D7BD;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.detail {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+}
+
+.project-img {
+    float: right;
+    height: 150px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.project-img img {
+    height: 150px;
+    width: 300px;
+}
+
+
+.h2-style {
     display: inline;
     text-align: right;
     padding: 20px 20px;
 }
 
-.sample {
-   float: left;
-   width: 33.33%;
-   padding: 5px;
-}
-
-.main-too {
+.intro-right {
     display: grid;
-    box-sizing: border-box;
-    padding: 16px;
-    grid-template-columns: 2;
-    
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-columns: auto auto;
+    padding: 20px 30px;
+    margin: auto;
+    background-color: #BC5C1C;
+    border: 10px solid #3C1F15;
 }
 
-.project-img {
-    flex: 1 12%;
-    margin-right: 20px;
-}
-.project-img img {
-    max-width: 100%;
-    object-fit: ;
 
-}
