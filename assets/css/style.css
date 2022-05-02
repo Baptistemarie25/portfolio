@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #3c1f15;
+    --secondary-color: #bc5c1c;
+    --tertiary-color: #f2a78c;
+    --fourth-color: #f9d7bd;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,35 +12,36 @@
 }
 
 body {
-    color: #3C1F15;
+    color: var(--primary-color);
     font-family: sans-serif, Helvetica, Arial,;
-    background: #F9D7BD;
+    background: var(--fourth-color);
 }
 
 /* HEADER/NAVIGATION STYLES */
 header {
     padding: 30px 35px;
-    background-color: #BC5C1C;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-bottom: 10px solid #3C1F15;
+    border-bottom: 10px solid var(--primary-color);
 }
 
 header h1 {
     font-weight: bolder;
     font-size: 45px;
-    text-shadow: 3px 3px #BC5C1C;
-    background-color: #F2A78C;
+    text-shadow: 3px 3px var(--secondary-color);
+    background-color: var(--tertiary-color  );
     padding: 10px 10px;
-    border: 5px solid #3C1F15;
+    border: 5px solid var(--primary-color);
 }
 
 header a {
     text-decoration: none;
-    color: #3C1F15;
+    color: var(--primary-color);
 }
 
+/*navigation */
 header nav {
     margin: 20px 0;
 }
@@ -53,7 +61,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #F2A78C;
+    color: var(--tertiary-color );
 }
 /* Header Style End */
 
@@ -75,8 +83,8 @@ header nav ul li a:hover {
 
 .hero-title h2 {
     text-align: right;
-    color: #F2A78C;
-    text-shadow: 2px 2px #3C1F15;
+    color: var(--tertiary-color );
+    text-shadow: 2px 2px var(--primary-color);
     position: absolute;
     bottom: 0px;
     right: 15px;
@@ -107,6 +115,7 @@ header nav ul li a:hover {
     text-align: left;
 }
 
+/* Work samples section */
 .sample {
     display: flex;
     flex-wrap: wrap;
@@ -114,9 +123,10 @@ header nav ul li a:hover {
 }
 
 .sample .detail h3, h4 {
-    color: #F9D7BD;
+    color: var(--fourth-color);
     padding-left: 5px;
     text-align: left;
+    text-shadow: 2px 2px var(--secondary-color);
 }
 
 .detail {
@@ -124,17 +134,11 @@ header nav ul li a:hover {
     bottom: 0;
     left: 0;
 }
-
-.project-img {
-    float: right;
-    height: 150px;
-    width: 300px;
-    object-fit: cover;
-}
-
 .project-img img {
     height: 150px;
     width: 300px;
+    float: right;
+    object-fit: cover;
 }
 
 
@@ -153,8 +157,20 @@ header nav ul li a:hover {
     row-gap: 5px;
     grid-template-columns: auto auto;
     padding: 20px 30px;
-    background-color: #BC5C1C;
-    border: 10px solid #3C1F15;
+    background-color: var(--secondary-color);
+    border: 10px solid var(--primary-color);
+}
+
+/* CONTACT ME STYLE START */
+.intro-right address {
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro-right address a:hover {
+    color: var(--tertiary-color);
 }
 
 
