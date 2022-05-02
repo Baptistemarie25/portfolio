@@ -13,4 +13,4 @@ CSS
 [link](https://baptistemarie25.github.io/portfolio/)
 
 ### Screenshot
-[Portfolio screenshot](/portfolio/assets/images/portfolio-screenshot.jpeg)
+[Screenshot](./assets/images/portfolio-screenshot.jpeg)
